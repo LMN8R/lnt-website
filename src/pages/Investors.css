@@ -1,0 +1,112 @@
+.investors_container{
+    overflow: hidden;
+    max-width: 1920px; 
+  margin: 0 auto !important; 
+  float: none !important;
+  }
+  
+  
+  .investors-bg{
+    background-size: 100% 100%;
+   background-repeat: no-repeat;
+    width: 100%;
+    height: 21rem;
+    background-image: url(../../public/investors-bg.png);
+  }
+  .reports{
+    
+    background-color: white;
+    z-index: 100;
+    padding: 3rem 0rem;
+    margin: 2rem 7rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+  }
+  .reports-heading h2{
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: #EC691F;
+    padding-bottom: 1rem;
+  }
+  .investors-line{
+    background-color: black;
+    height: 18rem;
+    /* height: 100%; */
+    width: 0.1rem;
+  }
+  .report1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .pdf{
+    color: red;
+  }
+  .report2{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.1rem;
+  }
+  .report1-line{
+    background-color: black;
+    height: 0.02rem;
+    width: 100%;
+  }
+  .report-year p{
+     color: #20519b;
+     font-family: "Source Sans Pro Light"; ;
+  }
+  @media (max-width:1112px) {
+    .reports-heading h2{
+      font-size: 1.8rem;
+    }
+  }
+  @media (max-width:930px) {
+    .reports-heading h2{
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width:845px) {
+    .reports{
+      display: flex;
+      flex-direction: column;
+    }
+    .reports{
+     padding: 0rem 2rem;
+    }
+    .investors-line{
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  @media (max-width:396px) {
+    .reports-heading h2{
+      font-size: 1.3rem;
+    }
+    .reports{
+      margin: 2rem 3rem;
+    }
+    .report-year p{
+      font-size: 0.7rem;
+    }
+  }
+  .report-year:hover {
+   font-weight:900;
+  }
+  /* Initial style */
+  #hovered-text {
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /* Hovered style */
+  #hovered-text:hover {
+    font-family: "Source Sans Pro Bold"; 
+  }
+  .pdf img{
+    width: 28px;
+    height: 30px;
+    padding-bottom: 0.3rem;
+  }

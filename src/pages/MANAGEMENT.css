@@ -1,0 +1,270 @@
+.management {
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+/* card */
+
+.management-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.management-cards .card-D {
+  margin: 0.5rem;
+}
+
+/* .management-cards1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+.card-D {
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+  max-width: 20%;
+  /* padding: 1rem; */
+  background-color: #F3F9FF;
+  /* transition: 0.1s ease; */
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: all 0.3s ease-out;
+  border-radius: 2%;
+}
+
+.card-D:hover {
+  transform: translateY(-2%);
+}
+
+.containerc h4 {
+  color: #20519b;
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.containerc p {
+  font-weight: 100;
+  opacity: 0.8;
+  padding-left: 0.5rem;
+  /* padding-bottom: 0.5rem; */
+}
+
+.container-linkdn {
+  display: flex;
+  justify-content: flex-end;
+  color: #20519B;
+  height: 1.875rem;
+}
+
+/* Default styles */
+/* .management1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  padding-top: 7rem;
+  max-width: 1480px; 
+  margin: 0 auto; 
+} */
+
+
+.img-d_m img {
+  width: 100%;
+  max-height: auto;
+}
+
+.info-d_m {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-d_m h1 {
+  color: #20519B;
+  font-size: 2rem;
+  font-family: "Source Sans Pro Light";
+}
+
+.line-d_m {
+  height: 1.5px;
+  width: 100%;
+  background-color: #EC691F;
+}
+
+.para-d_m p {
+  color: black;
+  font-size: 1.1rem;
+  font-family: "Source Sans Pro Light";
+  line-height: 1.8;
+  padding-top: 2%;
+}
+.d_m {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 100%;
+  margin: 0rem 4rem;
+  /* Margin to create spacing between cards */
+}
+
+.box {
+  padding: 10px;
+  max-width: 100%;
+  background-color: #F3F9FF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+     border-radius: 8px;
+     /* padding-top: 3%; */
+     margin-top: 4%;
+     margin-left: 5%;
+     margin-right: 5%;
+}
+
+.crosslogo {
+  /* color: black; */
+  color: #EC691F;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+.crosslogo1:hover {
+  transform: translateY(-2%);
+  color: black;
+}
+.box{
+  padding-bottom: 3rem;
+}
+
+
+/* media query */
+@media (max-width:1200px) {
+  .containerc h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:992px) {
+  .containerc h4 {
+    font-size: 1.2rem;
+  }
+
+  .para-d_m p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width:940px) {
+  .containerc h4 {
+    font-size: 0.9rem;
+  }
+
+  .containerc p {
+    font-size: 0.9rem;
+  }
+  .d_m{
+    margin: 0rem 2rem;
+  }
+  .heading-d_m h1{
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .management-cards .card-D {
+    margin: 1rem;
+    max-width: 56%;
+    /* Make cards take up more space on smaller screens */
+  }
+
+  .d_m {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-d_m img {
+    max-width: 70%;
+    height: auto;
+  }
+}
+
+
+@media (max-width:600px) {
+  .containerc h4 {
+    font-size: 1rem;
+  }
+
+  .management-cards {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .d_m{
+    margin: 0rem 1.5rem;
+  }
+  .heading-d_m h1{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:415px) {
+  .management-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .d_m{
+    margin: 0rem 1rem;
+  }
+  .heading-d_m h1{
+    font-size: 1.8rem;
+  }
+
+}
+
+@media (max-width:370px) {
+  .heading-d_m h1 {
+    font-size: 1.5rem;
+  }
+
+  .para-d_m {
+    font-size: 0.7rem;
+  }
+
+  .img-d_m img {
+    max-width: 100%;
+    height: auto;
+  }
+  .d_m{
+    margin: 0rem 1rem;
+  }
+  .heading-d_m h1{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:300px) {
+  .containerc h4 {
+    font-size: 0.9rem;
+
+  }
+
+  .containerc p {
+    font-size: 0.7rem;
+  }
+
+  .card-D {
+    margin: -1rem;
+  }
+  .d_m{
+    margin: 0rem 1rem;
+  }
+  .heading-d_m h1{
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,132 @@
+.main {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  max-width: 70rem;
+  background-color: #eef7ff;
+  padding: 60px 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+li {
+}
+
+.newul {
+  list-style-position: inside;
+  list-style: square;
+  padding-left: 20px;
+}
+
+.heading {
+  margin: 1.5rem 0 0 0;
+  font-family: "Source Sans Pro", source_sans_proregular, arial;
+  font-weight: 600;
+  font-size: 2.25rem;
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  color: #ec691f;
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-underline-offset: 0.7rem;
+}
+
+.heading3 {
+  font-family: "Source Sans Pro", arial;
+  font-weight: 300;
+  font-size: 2rem;
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  color: #20519b;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.heading4 {
+  margin: 0.8rem 0;
+  font-family: "Source Sans Pro", arial;
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  color: #20519b;
+}
+
+.textcontent {
+  font-weight: 100;
+  font-size: 1.1rem;
+  text-rendering: optimizeLegibility;
+  line-height: 1.8;
+  color: black;
+  padding-top: 1%;
+}
+
+li.textcontent {
+  font-weight: 100;
+  font-size: 1.1rem;
+  text-rendering: optimizeLegibility;
+  line-height: 1.8;
+  color: black;
+  padding-top: 1%;
+}
+
+.pagetitle {
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 26rem) {
+  .main {
+    position: relative;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    background-color: #eef7ff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+  }
+
+  .heading {
+    margin: 1.5rem 0 0 0;
+    font-family: "Source Sans Pro", source_sans_proregular, arial;
+    font-weight: 600;
+    font-size: 2.25rem;
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    color: #ec691f;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: 0.7rem;
+  }
+
+  .heading3 {
+    font-family: "Source Sans Pro", arial;
+    font-weight: 300;
+    font-size: 2rem;
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    color: #20519b;
+    margin: 1.5rem 0 1rem 0;
+  }
+
+  .heading4 {
+    margin: 0.8rem 0;
+    font-family: "Source Sans Pro", arial;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    color: #20519b;
+  }
+
+  .textcontent {
+    font-weight: 100;
+    font-size: 1.1rem;
+    text-rendering: optimizeLegibility;
+    line-height: 1.8;
+    color: black;
+    padding-top: 1%;
+  }
+}

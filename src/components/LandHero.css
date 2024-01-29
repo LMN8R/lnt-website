@@ -1,0 +1,211 @@
+.Wrapper slick-arrow {
+  display: none !important;
+}
+
+.snip1585 {
+  color: white;
+  text-align: center;
+}
+
+.Wrapper{
+  overflow: hidden;
+  height: 100vh;
+  max-height: 70rem;
+}
+
+@media screen and (max-width: 920px) {
+  .Wrapper {
+     height: auto;
+  }
+}
+
+
+.Wrapper  img {
+  width: 100%;
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+          transform: scale(1.1);
+}
+.Wrapper .slick-active img {
+          transform: scale(1);
+  animation: cssAnimation 5.5s 1 ease-out forwards;
+}
+
+@keyframes cssAnimation {
+  from {
+    transform: scale(1) translate(0px);
+  }
+  to {
+    transform: scale(1.1) translate(0px);
+  }
+}
+
+
+
+
+.Wrapper  figcaption h3{
+  position: absolute;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Source Sans Pro Bold";
+  font-size: 4vw;
+  top: -15%; /* 10px */
+  bottom: 0; /* 10px */
+  left: 0;
+  margin-left: 7%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  text-align: left;
+}
+.Wrapper .slick-active figcaption h3{
+  animation: cssAnimat 5.5s 1 ease-out forwards;
+  animation-delay: 0.2s;
+}
+.Wrapper  figcaption h4{
+  position: absolute;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Source Sans Pro Bold";
+  font-size: 4vw;
+  top: 3%; /* 10px */
+  bottom: 0; /* 10px */
+  left: 0;
+  margin-left: 7%;
+  /* right: 0; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  text-align: left;
+}
+.Wrapper .slick-active figcaption h4{
+  
+  animation: cssAnimat 5.5s 1 ease-out forwards;
+  animation-delay: 0.25s;
+}
+
+@keyframes cssAnimat {
+  0% {
+    transform: scale(1) translateY(100%);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1) translateY(0%);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1) translateY(0%);
+    opacity: 1;
+  }
+  85%{
+    opacity: 0;
+  }
+  100% {
+    /* transform: scale(1) translateY(-50%); */
+    opacity: 0;
+  }
+}
+
+
+
+.Wrapper  figcaption lanbox{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0; /* 10px */
+  bottom: 0; /* 10px */
+  left: 0;
+  right: 0;
+  /* top: 75%; */
+  content: '';
+  /* transition: all 1s cubic-bezier(0.7, 0, 0.3, 1); */
+  opacity: 0;
+}
+.Wrapper .slick-active figcaption lanbox{
+  /* transform: translateY(0%);   */
+  animation: cssAnima 5.5s 1 ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes cssAnima {
+  0% {
+    transform: scale(1) translateY(100%);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1) translateY(0%);
+    /* opacity: 1; */
+  }
+  55%{
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1) translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    /* transform: scale(1) translateY(-100%); */
+    opacity: 0;
+  }
+}
+
+
+.Wrapper  figcaption h5{
+  position: absolute;
+  font-size: 2.25vw;
+  color: #ffcc01;
+  top: 25%; /* 10px */
+  bottom: 0; /* 10px */
+  left: 0;
+  margin-left: 7%;
+  /* right: 0; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 300;
+  /* transition: all 1s cubic-bezier(0.7, 0, 0.3, 1); */
+  opacity: 0;
+}
+.Wrapper .slick-active figcaption h5{
+  /* transform: translateY(0%);   */
+  animation: cssAnimat1 5.5s 1 ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes cssAnimat1 {
+  0% {
+    transform: scale(1) translateY(80%);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1) translateY(0%);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1) translateY(0%);
+    opacity: 1;
+  }
+  85%{
+    opacity: 0;
+  }
+  100% {
+    /* transform: scale(1) translateY(-50%); */
+    opacity: 0;
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+  .Wrapper  figcaption h4, .Wrapper figcaption h3 {
+     font-size: 3.75rem;
+  }
+  .Wrapper figcaption h5{
+    font-size: 2rem;
+  }
+}

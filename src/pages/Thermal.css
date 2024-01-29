@@ -1,0 +1,242 @@
+.thermal_container{
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.to_content p{
+  font-family: 'Source Sans Pro Light';
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+.to_content{
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+}
+
+.thermal_highlights{
+  padding-bottom: 3rem;
+}
+
+.thermal_highlights .years_desc{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #20519B;
+}
+
+.thermal_marquee{
+  background-color: #20519B;
+  padding: 3rem;
+}
+
+.thermal_marquee_container{
+  padding-bottom: 3rem;
+}
+
+
+/* Projects */
+.thermal_projects_container_cont{
+  padding-bottom: 3rem;
+}
+.thermal_projects_container{
+  padding-bottom: 1.5rem;
+  background-color: #E3F2FF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thermal_projects{
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+}
+
+.thermal_projects_col{
+  display: flex;
+  flex-direction: column;
+  max-width: 75rem;
+}
+
+
+:root {
+  --black-clr: #151515;
+  --white-clr: #fff;
+  --red-clr: #da251c;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1500px;
+  transform: translateX(-25%);
+  transition: 800ms ease-in-out transform;
+}
+.card-container:hover {
+  transform: translateX(0);
+}
+
+.page {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  
+}
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.left-page,
+.right-page {
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+}
+.right-page {
+  z-index: -3;
+  box-shadow: 0.4rem 0.6rem 0.4rem 0 rgba(0, 0, 0, 0.3)
+}
+
+.page-1,
+.page-2 {
+  transition: 1000ms ease-in-out transform;
+  transform-origin: right;
+  transform: rotateY(180deg);
+}
+.page-2 {
+  transform: rotateY(180deg) translateZ(1px);
+  z-index: 1;
+}
+.card-container:hover .page-1,
+.card-container:hover .page-2 {
+  transform: rotateY(0);
+}
+
+
+/* TYPOGRAPHY */
+.page-1,
+.page-3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.page h1 {
+  font-size: 1rem;
+  position: absolute;
+  top: 10px;
+}
+.page-1 h1 {
+  left: 10px;
+}
+.page-2 h1,
+.page-3 h1 {
+  right: 10px;
+}
+
+.page-1 {
+  color: white;
+  background-color: #20519B;
+  /* outline: 1px solid var(--white-clr); */
+}
+.page-1 h2 {
+  padding: 0 10%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.page-1 * {
+  transform: scaleX(-1);
+}
+.page-1 img {
+height: 70%;
+}
+
+.page-2 {
+  color: var(--white-clr);
+  
+  box-shadow: 0 0.6rem 0.4rem 0 rgba(0, 0, 0, 0.3)
+}
+
+.page-3 {
+  justify-content: center;
+  background-color: var(--white-clr);
+  padding: 0 1rem;
+  text-align: center;
+  color: var(--red-clr);
+  /* outline: 1px solid #20519B; */
+}
+.page-3 p {
+  margin: .5rem 0;
+  color: var(--black-clr);
+  font-size: .9rem;
+  font-weight: 500;
+}
+.page-3 button {
+  background-color: transparent;
+  margin-top: 0.5rem;
+  padding: .5rem 1rem;
+  border: 3px solid #20519B;
+  font-size: 1.2rem;
+  border-radius: 30%;
+  cursor: pointer;
+  color: #20519B;
+  font-weight: 600;
+  transition: 200ms ease-in-out background-color,
+              200ms ease-in-out color;
+}
+.page-3 button:hover {
+  background-color: #20519B;
+  color: var(--white-clr);
+}
+.page-3 button:active {
+  transform: scale(.9);
+}
+
+
+
+.thermal_button{
+  padding: 0.2rem 3rem;
+  border-radius: 1.5rem;
+  border-color: black;
+  border: 0.1rem solid;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.thermal_button:hover{
+  border-color: white;
+  background-color: #20519B;
+  color: white;
+}
+
+.thermal_button_container{
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 70rem) {
+  .thermal_projects{
+    flex-direction: column;
+    padding: 0;
+    .card-container{
+      padding: 1.5rem 0;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  
+  .thermal_projects{
+    flex-direction: column;
+    padding: 0;
+    .card-container{
+      padding: 1.5rem 0;
+    }
+  }
+}

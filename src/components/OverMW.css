@@ -1,0 +1,87 @@
+.overmw_bl1{
+  position: absolute;
+  height: 85%;
+  width: 0.1rem;
+  left: 50%;
+  background-color:rgb(255, 255, 255);
+}
+.overmw_bl2{
+  position: absolute;
+  height: 85%;
+  width: 0.1rem;
+  left: 25%;
+  background-color: rgb(255, 255, 255);
+}
+.overmw_bl3{
+  position: absolute;
+  height: 75%;
+  width: 0.1rem;
+  left: 75%;
+  background-color: rgb(255, 255, 255);
+}
+
+.overmw_bl4{
+  position: absolute;
+  height: 75%;
+  width: 0.1rem;
+  left: 33.33%;
+  background-color: rgb(255, 255, 255);
+}
+
+.overmw_bl5{
+  position: absolute;
+  height: 75%;
+  width: 0.1rem;
+  left: 66.66%;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.overmw_container{
+  text-align: center;
+  position: relative;
+  background-color: #EEF7FF;
+  display: flex;
+  height: auto;
+  width: 95%;
+  flex: 0 1 auto;
+  flex-direction: row;
+  margin: auto;
+  align-content: center;
+  z-index: 2;
+  padding: 1em 2.5em;
+  justify-content: space-between;
+  box-shadow: 0.4rem 0.6rem 0.4rem 0 rgba(0, 0, 0, 0.5);
+  flex-grow: 1;
+}
+
+.overmw_num{
+  font-size: 4em;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (max-width: 1260px) {
+  .overmw_container{
+    flex-direction: column;
+  }
+  .overmw_num{
+    font-size: 2em;
+  }
+  .overmw_bl1, .overmw_bl2, .overmw_bl3, .overmw_bl4, .overmw_bl5{
+    height: 0;
+  }
+}
+
+
+
+
+.over_smol {
+  /* margin-top: -0.3em; */
+  font-size: 0.55em;
+  font-weight: 600;
+  font-family: 'Source Sans Pro';
+  color: #EC691F;
+}
